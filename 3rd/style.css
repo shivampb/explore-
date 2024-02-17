@@ -1,0 +1,87 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Kode Mono", monospace;
+    /* background: #000; */
+      background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background color */
+    backdrop-filter: blur(10px); /* Add a blur effect for better visibility */
+    z-index: 1000; /* Ensure the navbar is above other elements */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 4vw;
+}
+
+.logo {
+    color: #fff; /* Logo color */
+    margin: 0;
+font-size:3vw;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+     margin-left: 2vw;  /* Adjust spacing between menu items */
+}
+
+.nav-links li a {
+    color: #fff; /* Menu item text color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links li a:hover {
+    color: #ccc; /* Change text color on hover */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+     color: #7d341b; /* adjust text color as needed */
+    z-index: 1; /* ensure content is above the video */
+}
+
+h1 {
+    font-size: 10em;
+}
